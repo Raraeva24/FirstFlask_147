@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request  # Import Flask dan modul yang dibutuhkan
 
-app = Flask(__name__)  # Inisialisasi aplikasi Flask
+app = Flask(__name__, template_folder='web html')  # Inisialisasi aplikasi Flask
 
 @app.route('/')  # Route untuk halaman utama (/) -> tampilan awal
 def index(): ##fungi index
