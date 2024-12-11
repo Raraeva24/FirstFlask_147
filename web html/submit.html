@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag ni tu buat nentuin karakter encoding yang dipakai sama halaman -->
+    <meta charset="UTF-8">
+    <!-- Meta tag buat responsif di perangkat mobile, jadi tampilannya bisa pas sesuai layar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Judul halaman yang muncul di tab browser -->
+    <title>Thank You</title>
+    <!-- Ini link ke file CSS untuk styling biar tampilannya nyaman dilihat -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Judul utama yang nunjukin terima kasih ke user -->
+    <h1>Thank You!</h1>
+    <!-- Pesan terima kasih dan tampilkan nama user yang berhasil submit -->
+    <p>Hello, <strong>{{ name }}</strong>. Your submission was successful!</p>
+    <!-- Tombol buat balek ke halaman yng tdi -->
+    <a href="/" class="btn">Go Back</a>
+</body>
+</html>

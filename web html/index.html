@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag buat set karakter dan responsif di berbagai perangkat -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Judul halaman yang bakal muncul di tab browser -->
+    <title>Form Submission</title>
+    <!-- Link ke file CSS untuk styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Judul utama di halaman -->
+    <h1>Submit Your Name</h1>
+    <!-- Form untuk ngirim data ke server via POST ke endpoint '/submit' -->
+    <form action="/submit" method="POST">
+        <!-- Input text untuk nama, yang wajib diisi (required) -->
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <!-- Tombol buat submit form -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
